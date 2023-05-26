@@ -1,4 +1,4 @@
-import { UserCard } from './user.styled';
+import { Avatar, Description, UserCard, UserInfo, UserName, UserStats, UserStatsItem, UserStatsName, UserStatsQuontity} from './user.styled';
 
 export const Profile = ({
   userName,
@@ -8,28 +8,28 @@ export const Profile = ({
   stats,
 }) => {
   return (
-    <UserCard className="profile">
-      <div className="description">
-        <img src={avatar} alt="User avatar" className="avatar" />
-        <p className="name">{userName}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
-      </div>
+    <UserCard>
+      <Description>
+        <Avatar src={avatar} alt="User avatar" />
+        <UserName >{userName}</UserName>
+        <UserInfo >{tag}</UserInfo>
+        <UserInfo >{location}</UserInfo>
+      </Description>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
-        </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
-        </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
-        </li>
-      </ul>
+      <UserStats>
+        <UserStatsItem>
+          <UserStatsName >Followers</UserStatsName>
+          <UserStatsQuontity >{stats.followers}</UserStatsQuontity>
+        </UserStatsItem>
+        <UserStatsItem>
+          <UserStatsName >Views</UserStatsName>
+          <UserStatsQuontity >{stats.views}</UserStatsQuontity>
+        </UserStatsItem>
+        <UserStatsItem>
+          <UserStatsName >Likes</UserStatsName>
+          <UserStatsQuontity >{stats.likes}</UserStatsQuontity>
+        </UserStatsItem>
+      </UserStats>
     </UserCard>
   );
 };
