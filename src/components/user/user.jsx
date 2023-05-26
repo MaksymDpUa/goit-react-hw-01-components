@@ -1,4 +1,5 @@
 import { Avatar, Description, UserCard, UserInfo, UserName, UserStats, UserStatsItem, UserStatsName, UserStatsQuontity} from './user.styled';
+// import PropTypes from 'prop-types'; 
 
 export const Profile = ({
   userName,
@@ -33,3 +34,12 @@ export const Profile = ({
     </UserCard>
   );
 };
+
+
+// Profile.PropTypes = {
+//   userName: PropTypes.string,
+//   tag: PropTypes.string,
+//   location : PropTypes.string,
+//   avatar: PropTypes.string,
+// //   stats: PropTypes.objectOf(PropTypes.number),
+// }
