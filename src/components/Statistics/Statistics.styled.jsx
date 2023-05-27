@@ -5,6 +5,7 @@ padding:16px;
 width: 400px;
 margin-left: auto;
 margin-right: auto;
+margin-bottom: 20px;
 background-color: #cdddce;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);

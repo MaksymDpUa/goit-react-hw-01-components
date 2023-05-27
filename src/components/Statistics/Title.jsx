@@ -1,8 +1,8 @@
 import { StatTitle } from "./Statistics.styled";
 
-  export const statsTitle = (title) => { 
+export const StatsTitle = ({ title }) => { 
         if (!title) {
             return
         }
-        return <StatTitle className="title">{title}</StatTitle>
+        return <StatTitle>{title}</StatTitle>
     };
