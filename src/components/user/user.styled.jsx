@@ -16,46 +16,46 @@ export const Description = styled.div`
 `;
 
 export const Avatar = styled.img`
-display: block;
-    width: 100%;
-    margin-bottom: 8px;
-      background-color: #ccfdfd;
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: #ccfdfd;
 `;
 
 export const UserName = styled.p`
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
 `;
 export const UserInfo = styled.p`
-    font-size: 16px;
-    font-weight: 400px;
-    color: #818188;
+  font-size: 16px;
+  font-weight: 400px;
+  color: #818188;
 `;
 
 export const UserStats = styled.ul`
-    list-style: none;
-    display: flex;
-    gap: 4px;
-`
+  list-style: none;
+  display: flex;
+  gap: 4px;
+`;
 export const UserStatsItem = styled.li`
-    border: 1px solid #818188;
-    width: calc(100% / 3);
-    padding-top:16px;
-    padding-bottom:16px;`;
+  border: 1px solid #818188;
+  width: calc(100% / 3);
+  padding-top: 16px;
+  padding-bottom: 16px;
+`;
 
 export const UserStatsName = styled.span`
-        display: block;
-        text-align: center;
-        font-size: 16px;
-        color:  #686877;
-    `;
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #686877;
+`;
 
 export const UserStatsQuontity = styled.span`
-    display: block;
-        text-align: center;
-        font-size: 18px;
-        font-weight: bold;
-        color: #51515c
-
-    `
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #51515c;
+`;

@@ -1,8 +1,14 @@
-import { StatTitle } from "./Statistics.styled";
+import PropTypes from 'prop-types';
 
-export const StatsTitle = ({ title }) => { 
-        if (!title) {
-            return
-        }
-        return <StatTitle>{title}</StatTitle>
-    };
+import { StatTitle } from './Statistics.styled';
+
+export const StatsTitle = ({ title }) => {
+  if (!title) {
+    return;
+  }
+  return <StatTitle>{title}</StatTitle>;
+};
+
+StatsTitle.propTypes = {
+  title: PropTypes.string,
+};

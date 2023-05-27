@@ -1,5 +1,16 @@
-import { Avatar, Description, UserCard, UserInfo, UserName, UserStats, UserStatsItem, UserStatsName, UserStatsQuontity} from './user.styled';
-// import PropTypes from 'prop-types'; 
+import PropTypes from 'prop-types';
+
+import {
+  Avatar,
+  Description,
+  UserCard,
+  UserInfo,
+  UserName,
+  UserStats,
+  UserStatsItem,
+  UserStatsName,
+  UserStatsQuontity,
+} from './user.styled';
 
 export const Profile = ({
   userName,
@@ -12,34 +23,33 @@ export const Profile = ({
     <UserCard>
       <Description>
         <Avatar src={avatar} alt="User avatar" />
-        <UserName >{userName}</UserName>
-        <UserInfo >{tag}</UserInfo>
-        <UserInfo >{location}</UserInfo>
+        <UserName>{userName}</UserName>
+        <UserInfo>{tag}</UserInfo>
+        <UserInfo>{location}</UserInfo>
       </Description>
 
       <UserStats>
         <UserStatsItem>
-          <UserStatsName >Followers</UserStatsName>
-          <UserStatsQuontity >{stats.followers}</UserStatsQuontity>
+          <UserStatsName>Followers</UserStatsName>
+          <UserStatsQuontity>{stats.followers}</UserStatsQuontity>
         </UserStatsItem>
         <UserStatsItem>
-          <UserStatsName >Views</UserStatsName>
-          <UserStatsQuontity >{stats.views}</UserStatsQuontity>
+          <UserStatsName>Views</UserStatsName>
+          <UserStatsQuontity>{stats.views}</UserStatsQuontity>
         </UserStatsItem>
         <UserStatsItem>
-          <UserStatsName >Likes</UserStatsName>
-          <UserStatsQuontity >{stats.likes}</UserStatsQuontity>
+          <UserStatsName>Likes</UserStatsName>
+          <UserStatsQuontity>{stats.likes}</UserStatsQuontity>
         </UserStatsItem>
       </UserStats>
     </UserCard>
   );
 };
 
-
-// Profile.PropTypes = {
-//   userName: PropTypes.string,
-//   tag: PropTypes.string,
-//   location : PropTypes.string,
-//   avatar: PropTypes.string,
-// //   stats: PropTypes.objectOf(PropTypes.number),
-// }
+Profile.propTypes = {
+  userName: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.objectOf(PropTypes.number),
+};
