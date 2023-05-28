@@ -2,10 +2,7 @@ import PropTypes from 'prop-types';
 
 import { StatTitle } from './Statistics.styled';
 
-export const StatsTitle = ({ title }) => {
-  if (!title) {
-    return;
-  }
+export const StatsTitle = ( {title} ) => {
   return <StatTitle>{title}</StatTitle>;
 };
 

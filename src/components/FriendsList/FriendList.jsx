@@ -4,8 +4,17 @@ import { ListOfFriends } from './FriendsList.styled';
 
 export const FriendsList = ({ friends }) => {
   return (
-    <ListOfFriends className="friend-list">
-      <FriendsListItem friends={friends}></FriendsListItem>
+    <ListOfFriends>
+      {friends.map(({ isOnline, avatar, name, id }) => {
+        return (
+          <FriendsListItem
+            isOnline={isOnline}
+            avatar={avatar}
+            name={name}
+            key={id}
+          />
+        );
+      })}
     </ListOfFriends>
   );
 };

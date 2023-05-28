@@ -11,15 +11,15 @@ import { TransactionHistory } from 'components/TransactionHistory/TransactionHis
 export const App = () => {
   return (
     <Main>
-    <Profile
-      userName={user.username}
-      tag={user.tag}
-      location={user.location}
-      avatar={user.avatar}
-      stats={user.stats}
-    ></Profile>
-      <Statistics stats={data} title="Upload stats"></Statistics>
-      <FriendsList friends={friends}></FriendsList>
+      <Profile
+        userName={user.username}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+      />
+      <Statistics stats={data} title="Upload stats" />
+      <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
     </Main>
   );

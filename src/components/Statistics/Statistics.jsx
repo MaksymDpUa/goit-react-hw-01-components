@@ -7,9 +7,9 @@ import { StatSection, StatList } from './Statistics.styled';
 export const Statistics = ({ stats, title }) => {
   return (
     <StatSection>
-      <StatsTitle title={title}></StatsTitle>
+     {title && (<StatsTitle title={title}/>)}
       <StatList>
-        <ListItem stats={stats}></ListItem>
+        <ListItem stats={stats}/>
       </StatList>
     </StatSection>
   );
